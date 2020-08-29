@@ -61,6 +61,11 @@ const userPrompt = async () => {
             message: "What kind of license should your project have?",
             type: "input"
         },
+        {
+            name: "tests",
+            message: "What command should be run to run tests?",
+            type: "input"
+        },
     ])
 
     //Write the README file

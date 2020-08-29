@@ -7,8 +7,6 @@ function generateRepoName(projectName) {
 function generateMarkdown(data) {
   return `
 
-  [![Issues][issues-shield]][issues-url]
-
   # ${data.projectName}
 
   Developed by: ${data.GitHubUsername}
@@ -35,6 +33,8 @@ function generateMarkdown(data) {
   ${data.repoContribution}
   ## License
   ${data.license}
+  ## Tests
+  ${data.tests}
   ## Support
   Please [open an issue](https://github.com/${data.GitHubUsername}/${generateRepoName(
     data.projectName
